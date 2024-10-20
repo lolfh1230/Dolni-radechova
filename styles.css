@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+/***** reusable *****/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url(images/skolabcgrnd.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/****** Img Slider ******/
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.container .wrapper {
+    width: 99%;
+    height: 50vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6 );
+    overflow: hidden;
+}
+
+.container .wrapper-holder {
+    display: grid;  
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+
+.container #slider-img-1 {
+    background-image: url(images/budova.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container #slider-img-2 {
+    background-image: url(images/toaleta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container #slider-img-3 {
+    background-image: url(images/trida.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container #slider-img-4 {
+    background-image: url(images/skolka.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+    /* opacity: 50%; */
+}
+
+.container .button-holder{
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 7px 4px #cccc19; 
+}
+
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+/****** Uvodni text *******/
+
+.uvodni-text {
+    text-align: center;
+    margin-left: 53%;
+    margin-right: 3%;
+    margin-top: 2%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: initial;
+}
+
+
+/****** header *****/
+
+main {
+    height: 50vh;
+}
+
+/*********** About us ************/
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 2.5%;
+    font-size: 30px;
+    font-size: 30px;
+
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 3px solid #8BC34A;
+    margin: 20px auto;
+}
+
+.novinky h3{
+    display: flex;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
+
+/****** Stop Floating ******/
+
+.clearfix {zoom: 1}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

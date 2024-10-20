@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+/***** reusable *****/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url(images/skolabcgrnd.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/****** header *****/
+
+main {
+    height: 100vh;
+}
+
+/*********** About us ************/
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 2.5%;
+    font-size: 30px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 3px solid #8BC34A;
+    margin: 20px auto;
+}
+/****** Stop Floating ******/
+
+.clearfix {zoom: 1}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

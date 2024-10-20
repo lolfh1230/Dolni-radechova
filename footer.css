@@ -1,0 +1,33 @@
+/****** Footer ******/
+
+.footer-page {
+    background-color: #A5C882;
+    color: #fff;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social p {
+    display: inline;
+    margin-right: 20px;
+}
+
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: #C5E1A5;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0;
+}
